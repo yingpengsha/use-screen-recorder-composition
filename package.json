@@ -1,0 +1,55 @@
+{
+  "name": "ts-lib-template",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "Pengsha Ying <yingfusheng@foxmail.com>",
+  "description": "😎 Awesome typescript library template",
+  "repository": "git@github.com:yingpengsha/ts-lib-template.git",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "require": "./dist/index.js",
+    "import": "./dist/index.mjs"
+  },
+  "lint-staged": {
+    "*.{js,ts,md,json,yml}": [
+      "eslint --fix"
+    ]
+  },
+  "scripts": {
+    "dev": "tsup --watch --sourcemap",
+    "build": "tsup",
+    "test:dev": "vitest",
+    "test": "vitest run",
+    "lint": "eslint \"**/*.{js,ts,md,json,yml}\"",
+    "release": "pnpm run build && bump --commit --push --tag && pnpm publish",
+    "reset": "rimraf ./node_modules && pnpm install"
+  },
+  "devDependencies": {
+    "@jsdevtools/version-bump-prompt": "^6.1.0",
+    "@types/node": "^16.10.2",
+    "@typescript-eslint/eslint-plugin": "^4.32.0",
+    "@typescript-eslint/parser": "^4.32.0",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-define-config": "^1.0.9",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-markdown": "^2.2.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.1.2",
+    "rimraf": "^3.0.2",
+    "tsup": "^5.2.1",
+    "typescript": "^4.4.3",
+    "vitest": "^0.1.13"
+  }
+}
