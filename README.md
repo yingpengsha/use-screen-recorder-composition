@@ -1,4 +1,4 @@
-# ts-lib-template
+# use-screen-recorder
 
 ## 🚀 Features
 
@@ -14,7 +14,7 @@
 
 ## 🌸 Thanks
 
-This project is heavily inspired by [egoist/ts-lib-starter](https://github.com/egoist/ts-lib-starter)
+This project is heavily inspired by 
 
 ## 📄 License
 

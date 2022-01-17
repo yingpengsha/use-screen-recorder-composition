@@ -1,40 +1,20 @@
 {
-  "name": "ts-lib-template",
-  "version": "0.0.1",
-  "license": "MIT",
-  "author": "Pengsha Ying <yingfusheng@foxmail.com>",
-  "description": "😎 Awesome typescript library template",
-  "repository": "git@github.com:yingpengsha/ts-lib-template.git",
-  "publishConfig": {
-    "access": "public"
-  },
-  "files": [
-    "dist"
-  ],
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
-  "exports": {
-    "require": "./dist/index.js",
-    "import": "./dist/index.mjs"
-  },
+  "name": "@use-screen-recorder-composition/monorepo",
+  "private": "true",
   "lint-staged": {
     "*.{js,ts,md,json,yml}": [
       "eslint --fix"
     ]
   },
   "scripts": {
-    "dev": "tsup --watch --sourcemap",
-    "build": "tsup",
-    "test:dev": "vitest",
-    "test": "vitest run",
     "lint": "eslint \"**/*.{js,ts,md,json,yml}\"",
-    "release": "pnpm run build && bump --commit --push --tag && pnpm publish",
-    "reset": "rimraf ./node_modules && pnpm install"
+    "dev": "pnpm run dev --filter \"use-screen-recorder-composition\"",
+    "build": "pnpm run build --filter \"use-screen-recorder-composition\"",
+    "play:2": "vue-demi-switch 2 && pnpm run serve --filter \"@use-screen-recorder-composition/vue-2\"",
+    "play:3": "vue-demi-switch 3 && pnpm run serve --filter \"@use-screen-recorder-composition/vue-3\"",
+    "release": "pnpm run build --filter \"use-screen-recorder-composition\""
   },
   "devDependencies": {
-    "@jsdevtools/version-bump-prompt": "^6.1.0",
-    "@types/node": "^16.10.2",
     "@typescript-eslint/eslint-plugin": "^4.32.0",
     "@typescript-eslint/parser": "^4.32.0",
     "eslint": "^7.32.0",
@@ -47,9 +27,7 @@
     "eslint-plugin-promise": "^5.1.0",
     "husky": "^7.0.2",
     "lint-staged": "^11.1.2",
-    "rimraf": "^3.0.2",
-    "tsup": "^5.2.1",
-    "typescript": "^4.4.3",
-    "vitest": "^0.1.13"
+    "typescript": "~4.4.3",
+    "vue-demi": "^0.12.1"
   }
 }

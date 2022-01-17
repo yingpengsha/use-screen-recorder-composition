@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
+    "target": "ES2015",
+    "module": "ESNext",
     "strict": true,
     "esModuleInterop": true,
     "moduleResolution": "node",
@@ -9,15 +9,11 @@
     "noImplicitAny": true,
     "allowJs": true,
     "checkJs": true,
-    "resolveJsonModule": true,
-    "types": ["node", "jest"],
-    "baseUrl": "./",
-    "paths": {
-      "@/*": ["src/*"]
-    }
+    "resolveJsonModule": true
   },
   "exclude": [
     "node_modules",
-    "dist"
+    "dist",
+    "example"
   ]
 }

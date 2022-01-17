@@ -1,13 +1,13 @@
 # dependencies
-/node_modules
-/npm-debug.log*
-/yarn-error.log
-/yarn.lock
-/package-lock.json
-/.pnpm-debug.log
+node_modules
+npm-debug.log*
+yarn-error.log
+yarn.lock
+package-lock.json
+.pnpm-debug.log
 
 # production
-/dist
+dist
 
 # misc
 .DS_Store
