@@ -40,7 +40,6 @@
 </template>
 
 <script setup lang="ts">
-import { watch, reactive } from "vue";
 import useScreenRecorder from "use-screen-recorder-composition";
 const screenRecorder = useScreenRecorder();
 </script>

@@ -1,21 +1,53 @@
-# use-screen-recorder
+# use-screen-recorder-composition
 
-## 🚀 Features
+> Vue composition for easily recording screen using MediaStream APIs.
 
-- Package manager [pnpm](https://pnpm.js.org), safe and fast
-- Release with [@jsdevtools/version-bump-prompt](https://jstools.dev/version-bump-prompt)
-- Bundle with [tsup](https://github.com/egoist/tsup)
-- Test with [jest](https://jestjs.io)
+## Install
 
-## 🦄 Using this template
+### Vue3.0
 
-- Search `ts-lib-template` and replace it with your custom package name.
-- Search `yingpengsha` and replace it with your name.
+```bash
+npm add use-screen-recorder-composition
+```
 
-## 🌸 Thanks
+### Vue2.0
 
-This project is heavily inspired by 
+```bash
+npm add @vue/composition-api use-screen-recorder-composition
+```
 
-## 📄 License
+## Usage
 
-[MIT License](https://github.com/yingpengsha/ts-lib-template/blob/main/LICENSE) &copy; 2021-PRESENT [PengshaYing](https://github.com/yingpengsha)
+### Vue3.0
+
+```vue
+<script setup lang="ts">
+import useScreenRecorder from "use-screen-recorder-composition";
+const screenRecorder = useScreenRecorder();
+</script>
+```
+
+### Vue2.0
+
+```vue
+<script lang="ts">
+import { defineComponent } from '@vue/composition-api'
+import useScreenRecorder from 'use-screen-recorder-composition'
+
+export default defineComponent({
+  setup() {
+    return {
+      screenRecorder: useScreenRecorder()
+    }
+  }
+})
+</script>
+```
+
+## Thanks
+
+This project is heavily inspired by [use-screen-recorder](https://github.com/ishan-chhabra/use-screen-recorder)
+
+## License
+
+[MIT License](https://github.com/yingpengsha/use-screen-recorder-composition/blob/main/LICENSE) &copy; 2022-PRESENT [PengshaYing](https://github.com/yingpengsha)
