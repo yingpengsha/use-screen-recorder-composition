@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "vue": "^3.0.0",
-    "use-screen-recorder-composition": "workspace"
+    "use-screen-recorder-composition": "workspace:*"
   },
   "devDependencies": {
     "@vue/cli-plugin-typescript": "~4.5.0",
