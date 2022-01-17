@@ -12,7 +12,7 @@
     "build": "pnpm run build --filter \"use-screen-recorder-composition\"",
     "play:2": "vue-demi-switch 2 && pnpm run serve --filter \"@use-screen-recorder-composition/vue-2\"",
     "play:3": "vue-demi-switch 3 && pnpm run serve --filter \"@use-screen-recorder-composition/vue-3\"",
-    "release": "pnpm run build --filter \"use-screen-recorder-composition\""
+    "release": "pnpm run release --filter \"use-screen-recorder-composition\""
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.32.0",

@@ -1,6 +1,6 @@
 {
   "name": "use-screen-recorder-composition",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "license": "MIT",
   "author": "Pengsha Ying <yingfusheng@foxmail.com>",
   "description": "📹 Vue composition for easily recording screen using MediaStream APIs.",
