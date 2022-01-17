@@ -10,13 +10,13 @@
 ### Vue3.0
 
 ```bash
-npm add use-screen-recorder-composition
+npm install use-screen-recorder-composition
 ```
 
 ### Vue2.0
 
 ```bash
-npm add @vue/composition-api use-screen-recorder-composition
+npm install @vue/composition-api use-screen-recorder-composition
 ```
 
 ## Usage
