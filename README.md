@@ -1,9 +1,8 @@
 # use-screen-recorder-composition
 
-
 <a href='https://www.npmjs.com/package/use-screen-recorder-composition'><img src='https://img.shields.io/npm/v/use-screen-recorder-composition?color=42b883' alt='npm'></a>
 
-> Vue composition for easily recording screen using MediaStream APIs.
+> Vue Composition API for easily recording screen using MediaStream APIs.
 
 ## Install
 
