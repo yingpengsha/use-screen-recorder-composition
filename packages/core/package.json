@@ -18,7 +18,8 @@
     "access": "public"
   },
   "files": [
-    "dist"
+    "dist",
+    "dist/esm/index.d.ts"
   ],
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
