@@ -1,6 +1,6 @@
 {
   "name": "use-screen-recorder-composition",
-  "version": "0.1.1-beta.2",
+  "version": "0.1.1-beta.3",
   "license": "MIT",
   "author": "Pengsha Ying <yingfusheng@foxmail.com>",
   "description": "📹 Vue Composition API for easily recording screen using MediaStream APIs.",
@@ -26,7 +26,7 @@
   "types": "./dist/esm/index.d.ts",
   "scripts": {
     "dev": "pnpm run build:esm -- -w --sourcemap & pnpm run build:cjs -- -w --sourcemap",
-    "build": "rimraf ./dist && pnpm run build:esm & pnpm run build:cjs",
+    "build": "rimraf ./dist && pnpm run build:esm && pnpm run build:cjs",
     "build:esm": "tsc --module es2015 --outDir dist/esm -d",
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
     "release": "pnpm run build && bump --commit --push --tag && pnpm publish",
